@@ -1,0 +1,244 @@
+@media only screen and (max-width: 600px) {
+  .heading__image--title {
+    font-size: 110px;
+    margin-top: 30vh;
+    text-align: right;
+  }
+  .heading__image {
+    width: 100vw;
+    background-attachment: fixed;
+  }
+  .menuopen--icon {
+    position: absolute;
+    right: 10%;
+    top: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+  .heading__menu {
+    width: 100%;
+  }
+  .menuclose--icon {
+    color: white;
+    position: absolute;
+    right: 10%;
+    top: 30px;
+  }
+  .heading__menu--link {
+    font-size: 30px;
+  }
+  .heading__menu--title {
+    font-size: 60px;
+  }
+  .introduce__title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    padding: 120px 0;
+  }
+  .introduce {
+    padding: 0 5%;
+  }
+  .introduce__image {
+    width: 90vw;
+  }
+  .introduce__content--title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .lesommet {
+    display: block;
+    padding: 5% 5%;
+  }
+  .lesommet__image {
+    width: 90vw;
+  }
+  .lesommet__content {
+    margin: 0;
+    width: 100%;
+  }
+  .lesommet__content--title {
+    width: 90%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 32px;
+  }
+  .workspace {
+    width: 90vw;
+    padding: 5% 5%;
+    box-sizing: border-box;
+  }
+  .workspace__content {
+    width: 100%;
+    display: block;
+    padding: 0;
+  }
+  .workspace__content--p {
+    width: 100%;
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .workspace__content--title {
+    width: 100%;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 32px;
+  }
+  .workspace__image1 {
+    top: 0;
+    width: 90vw;
+  }
+  .workspace__imgblock {
+    display: block;
+    margin: 0;
+  }
+  .workspace__imgblock--image2 {
+    width: 90vw;
+  }
+  .workspace__imgblock--image3 {
+    width: 90vw;
+    margin: 0;
+  }
+  .facilities {
+    display: block;
+    padding: 5% 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .facilities__img {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    object-fit: cover;
+  }
+  .facilities__content--title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 32px;
+    width: 90vw;
+  }
+  .introduce__content--list {
+    width: 90vw;
+  }
+  .facilities__content {
+    padding: 0 5%;
+  }
+  .facilities__content--p {
+    width: 90vw;
+  }
+  .floorplan {
+    margin: 0;
+  }
+  .floorplan__header {
+    display: block;
+  }
+  .floorplan__img {
+    width: 100vw;
+  }
+
+  .floorplan__download {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 26px;
+    margin: 0 20%;
+  }
+  .map {
+    display: block;
+    padding: 0;
+  }
+  .map__text {
+    width: 90vw;
+    padding: 5% 5%;
+  }
+
+  .map__content--title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 32px;
+  }
+  .map__content--p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .zoom_outer {
+    width: 100vw;
+    margin: 0;
+  }
+  .map__image {
+    width: 100vw;
+  }
+  .slider__image {
+    height: 30vh;
+  }
+  .partnership {
+    padding: 5% 5% 15% 5%;
+  }
+  .partnership__title {
+    font-size: 26px;
+    text-align: left;
+    margin: 0;
+  }
+
+  .partnership__description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: left;
+    width: 90vw;
+  }
+  .partnership__groups {
+    padding-top: 100px;
+    display: block;
+    margin: 0;
+  }
+  .partnership__group {
+    width: 90vw;
+  }
+  .partnership__group--name {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 16px;
+    margin-top: 0;
+  }
+  .partnership__group--description {
+    padding-top: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 0;
+  }
+  .contact__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 32px;
+  }
+  .contact__profile--name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 18px;
+  }
+  .contact__profiles {
+    display: block;
+    margin: 0;
+    width: 90vw;
+  }
+  .contact__profile {
+    width: 90%;
+    padding-top: 40px;
+  }
+}

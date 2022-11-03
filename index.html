@@ -11,6 +11,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/themify-icons/themify-icons.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/mobile.css" />
   </head>
   <body>
     <div class="heading">
@@ -18,32 +29,44 @@
         <h1 class="heading__image--title">ROIS</h1>
         <h3 class="heading__image--location">11-13 Pearson Street, Cremorne</h3>
         <div class="heading__logo"></div>
-        <i class="fa-regular fa-bars menuopen--icon"></i>
+        <button class="menuopen--icon">
+          <i class="ti-menu"></i>
+        </button>
       </div>
       <div class="heading__menu">
         <div class="heading__menu--content">
-          <h1 class="heading__menu--title">ROIS</h1>
-          <i class="fa-regular fa-bars menuclose--icon"></i>
+          <h1 class="heading__menu--title">
+            ROIS
+            <button class="menuclose--icon">
+              <i class="ti-close"></i>
+            </button>
+          </h1>
+
           <ul class="heading__menu--list">
             <li class="heading__menu--item">
-              <a href="" class="heading__menu--link">Workspace</a>
+              <a href="#workspace" class="heading__menu--link">Workspace</a>
             </li>
             <li class="heading__menu--item">
-              <a href="" class="heading__menu--link">Lifestyle</a>
+              <a href="#lesommet" class="heading__menu--link">Lifestyle</a>
             </li>
             <li class="heading__menu--item">
-              <a href="" class="heading__menu--link">Project Team</a>
+              <a href="#partnership" class="heading__menu--link"
+                >Project Team</a
+              >
             </li>
             <li class="heading__menu--item">
-              <a href="" class="heading__menu--link">Enquire</a>
+              <a href="#contact" class="heading__menu--link">Enquire</a>
             </li>
           </ul>
         </div>
         <div class="heading__footer">
-          <a href="http://" class="heading__footer--link">MANOR x VUJIC</a>
-          <p class="heading__footer--location">
+          <a href="#" class="heading__footer--link">MANOR x VUJIC</a><br />
+          <a
+            href="https://www.google.com/maps/place/11+Pearson+St,+Cremorne+VIC+3121,+%C3%9Ac/@-37.8269427,144.9943603,17z/data=!3m1!4b1!4m5!3m4!1s0x6ad6428db1bee085:0xf8b9ed68355c0cc!8m2!3d-37.826947!4d144.996549?hl=vi"
+            class="heading__footer--location"
+          >
             11-13 Pearson Street, Cremorne
-          </p>
+          </a>
         </div>
       </div>
     </div>
@@ -61,13 +84,13 @@
         <div class="introduce__content">
           <h2 class="introduce__content--title">Build your empire</h2>
           <div class="introduce__content--container">
-            <div class="introduce__content--left">
+            <div class="introduce__content--block">
               <p class="introduce__content--p">
                 ROIS will elevate your business, setting a new benchmark for
                 boutique offices in Cremorne. Located in the heart of
                 Melbourne’s Tech Hub, 11 Pearson Street is the place where
                 businesses want to be and be seen. ROIS is a premium product
-                without comparison. The craftmanship and level of detail is
+                without comWellnesson. The craftmanship and level of detail is
                 second to none. Featuring 6 levels of premium office space the
                 development has been tailored for businesses seeking flight to
                 quality.
@@ -114,7 +137,7 @@
                 </li>
               </ul>
             </div>
-            <div class="introduce__content--right">
+            <div class="introduce__content--block">
               <p class="introduce__content--p">
                 The rooftop at ROIS is unlike anything in Cremorne, offering
                 uninterupted views across Melbourne’s iconic sporting precinct.
@@ -165,7 +188,7 @@
         </div>
       </div>
       <!-- Lesommet -->
-      <div class="lesommet">
+      <div class="lesommet" id="lesommet">
         <img
           src="./assets/images/Lesommet.png"
           alt="le sommet"
@@ -184,7 +207,7 @@
         </div>
       </div>
       <!-- Workspace -->
-      <div class="workspace">
+      <div class="workspace" id="workspace">
         <div class="workspace__content">
           <h1 class="workspace__content--title">
             Workspaces crafted to your needs
@@ -257,19 +280,273 @@
       </div>
       <!-- Floor plans -->
       <div class="floorplan">
-        <div class="floorplan__content">
-          <div class="floorplan__level">
-            <h2 class="floorplan__level--name">Rooftop</h2>
-            - 106sqm
-            <p class="floorplan__level--p">TERRACE BAR</p>
+        <div class="floorplan__header">
+          <div class="floorplan__content">
+            <div class="floorplan__level">
+              <p class="floorplan__level--p">
+                <strong>ROOFTOP</strong> -106sqm
+              </p>
+              <p class="floorplan__level--p">TERRACE BAR</p>
+            </div>
+            <div class="floorplan__level">
+              <p class="floorplan__level--p">
+                <strong> LEVEL 06</strong> — 300sqm
+              </p>
+              <p class="floorplan__level--p">
+                COMMERCIAL OFFICE + 36.1sqm BALCONIES
+              </p>
+            </div>
+            <div class="floorplan__level">
+              <p class="floorplan__level--p">
+                <strong>LEVEL 05</strong> — 300sqm
+              </p>
+              <p class="floorplan__level--p">
+                COMMERCIAL OFFICE + 68.5sqm BALCONIES
+              </p>
+            </div>
+            <div class="floorplan__level">
+              <p class="floorplan__level--p">
+                <strong>LEVEL 04</strong> — 356sqm
+              </p>
+              <p class="floorplan__level--p">
+                COMMERCIAL OFFICE + 32.5sqm BALCONY
+              </p>
+            </div>
+            <div class="floorplan__level">
+              <p class="floorplan__level--p">
+                <strong>LEVEL 03</strong> — 356sqm
+              </p>
+              <p class="floorplan__level--p">
+                COMMERCIAL OFFICE + + 28sqm BALCONY
+              </p>
+            </div>
+            <div class="floorplan__level">
+              <p class="floorplan__level--p">
+                <strong>LEVEL 02</strong> — 356sqm
+              </p>
+              <p class="floorplan__level--p">COMMERCIAL OFFICE</p>
+            </div>
+            <div class="floorplan__level">
+              <p class="floorplan__level--p">
+                <strong>LEVEL 01</strong> —49sqm& 209sqm
+              </p>
+              <p class="floorplan__level--p">COMMERCIAL OFFICE</p>
+            </div>
+            <div class="floorplan__ground first">
+              <p class="floorplan__level--p">
+                <strong>GROUND FLOOR</strong>
+              </p>
+              <p class="floorplan__level--p">
+                CAFE / RETAIL 57sqm, COMMUNAL BOARDROOM + END OF TRIP FACILITIES
+              </p>
+            </div>
+            <div class="floorplan__ground">
+              <p class="floorplan__level--p">
+                <strong>BASEMENT</strong>
+              </p>
+              <p class="floorplan__level--p">22 SECURE CAR SPACES</p>
+            </div>
+          </div>
+          <img
+            src="./assets/images/Floorplan.png"
+            alt="floorplan"
+            class="floorplan__img"
+          />
+        </div>
+        <br /><br />
+        <div class="floorplan__footer">
+          <a
+            href="./assets/images/Floorplan.png"
+            download="Floorplan.png"
+            class="floorplan__download"
+            ><i class="ti-arrow-down"> </i> Download Floorplans</a
+          >
+        </div>
+      </div>
+      <!-- Map -->
+      <div class="map">
+        <div class="map__text">
+          <h1 class="map__content--title">The Kingship of Cremorne</h1>
+          <p class="map__content--p">
+            Located in the heart of Cremorne, ROIS is central to numerous
+            amenity. An abundance of Melbourne’s best cafes, restaurants, and
+            bars are all within a short stroll.
+          </p>
+          <div class="map__tab">
+            <button
+              class="map__tablinks FoodBeverage active"
+              onclick="openMap(event, 'FoodBeverage')"
+            >
+              Food & Beverage
+            </button>
+            <button
+              class="map__tablinks Wellness"
+              onclick="openMap(event, 'Wellness')"
+            >
+              Wellness
+            </button>
+            <button
+              class="map__tablinks Cafés"
+              onclick="openMap(event, 'Cafés')"
+            >
+              Cafés
+            </button>
+            <button
+              class="map__tablinks Amenity"
+              onclick="openMap(event, 'Amenity')"
+            >
+              Amenity
+            </button>
+          </div>
+          <div id="FoodBeverage" class="map__tabcontent"></div>
+          <div id="Wellness" class="map__tabcontent"></div>
+          <div id="Cafés" class="map__tabcontent"></div>
+          <div id="Amenity" class="map__tabcontent"></div>
+        </div>
+        <div class="map__content">
+          <div class="zoom_outer">
+            <div id="zoom">
+              <img
+                src="./assets/images/Map/Map1.png"
+                alt="Map1"
+                class="map__image"
+              />
+            </div>
           </div>
         </div>
-        <img
-          src="./assets/images/Floorplan.png"
-          alt="floorplan"
-          class="floorplan__img"
-        />
+      </div>
+      <!-- Slider -->
+      <div class="slider">
+        <div>
+          <img
+            src="./assets/images/Slider/Slide1.png"
+            alt="Slider1"
+            class="slider__image"
+          />
+        </div>
+        <div>
+          <img
+            src="./assets/images/Slider/Slide2.png"
+            alt="Slider2"
+            class="slider__image"
+          />
+        </div>
+        <div>
+          <img
+            src="./assets/images/Slider/Slide3.png"
+            alt="Slider3"
+            class="slider__image"
+          />
+        </div>
+        <div>
+          <img
+            src="./assets/images/Slider/Slide4.png"
+            alt="Slider4"
+            class="slider__image"
+          />
+        </div>
+        <div>
+          <img
+            src="./assets/images/Slider/Slide5.png"
+            alt="Slider5"
+            class="slider__image"
+          />
+        </div>
+        <div>
+          <img
+            src="./assets/images/Slider/Slide6.png"
+            alt="Slider6"
+            class="slider__image"
+          />
+        </div>
+        <div>
+          <img
+            src="./assets/images/Slider/Slide7.png"
+            alt="Slider7"
+            class="slider__image"
+          />
+        </div>
+      </div>
+      <!-- Partnership  -->
+      <div class="partnership" id="partnership">
+        <h1 class="partnership__title">MANOR x VUJIC</h1>
+        <p class="partnership__description">
+          The Manor × Vujic partnership specialises in creating beautiful spaces
+          that exude luxury, while inspiring connection, creativity and
+          community. With a background in high-end residential developments, we
+          understand what it takes to create beautiful spaces where people want
+          to live, connect and come back to.<br />
+          For every project we go the extra mile to deliver exceptional
+          developments that raise the bar for the industry.
+        </p>
+
+        <div class="partnership__groups">
+          <div class="partnership__group">
+            <p class="partnership__group--role">DEVELOPMENT COLLABORATOR</p>
+            <h2 class="partnership__group--name">Manor Property Group</h2>
+            <p class="partnership__group--description">
+              With extensive experience in providing capital structures and
+              solutions, Manor Property Group facilitate exceptional property
+              developments through collaboration with industry leaders.
+            </p>
+            <a href="manorpg.com" class="partnership__group--site"
+              >manorpg.com</a
+            >
+          </div>
+          <div class="partnership__group">
+            <p class="partnership__group--role">Developer & BUILDER</p>
+            <h2 class="partnership__group--name">Vujic Property Group</h2>
+            <p class="partnership__group--description">
+              Vujic Property Group is an award-winning construction company that
+              specialises in creating luxury homes, apartments and commercial
+              buildings.
+            </p>
+            <a href="manorpg.com" class="partnership__group--site"
+              >vujicproperty.com.au
+            </a>
+          </div>
+          <div class="partnership__group">
+            <p class="partnership__group--role">FUNDING PARTNER</p>
+            <h2 class="partnership__group--name">DIGCAP</h2>
+            <p class="partnership__group--description">
+              DIGCAP originated in Melbourne, Australia and has extensive
+              experience in providing capital structures and solutions through
+              methods of access to equity, debt or hybrid capital.
+            </p>
+            <a href="manorpg.com" class="partnership__group--site"
+              >digcap.capital
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Contact -->
+      <div class="contact" id="contact">
+        <h1 class="contact__title">Enquire Now</h1>
+        <div class="contact__profiles">
+          <div class="contact__profile">
+            <h2 class="contact__profile--name">ASH DEAN</h2>
+            <p class="contact__profile--number">0417 654 212</p>
+            <p class="contact__profile--email">ash.dean@colliers.com</p>
+          </div>
+          <div class="contact__profile">
+            <h2 class="contact__profile--name">JAMES MCMAHON</h2>
+            <p class="contact__profile--number">0421 547 184</p>
+            <p class="contact__profile--email">james.mcmahon@colliers.com</p>
+          </div>
+        </div>
       </div>
     </div>
   </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script
+    type="text/javascript"
+    src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+  <script src="./assets/js/index.js"></script>
 </html>
