@@ -40,6 +40,17 @@ const CafesArray = [
   "Axil Coffee Roasters",
   "Top Paddock",
 ];
+const floorPlan = [
+  { level: "ROOFTOP", size: "106sqm", amenity: "TERRACE BAR" },
+  { level: "LEVEL 06", size: "300sqm", amenity: "COMMERCIAL OFFICE + 36.1sqm BALCONIES" },
+  { level: "LEVEL 05", size: "300sqm", amenity: "COMMERCIAL OFFICE + 36.1sqm BALCONIES" },
+  { level: "LEVEL 04", size: "356sqm", amenity: "COMMERCIAL OFFICE + 36.1sqm BALCONIES" },
+  { level: "LEVEL 03", size: "356sqm", amenity: "COMMERCIAL OFFICE + 32.5sqm BALCONY" },
+  { level: "LEVEL 02", size: "300sqm", amenity: "Commercial Office" },
+  { level: "LEVEL 01", size: "300sqm", amenity: "Commercial Office" },
+  { level: "GROUND FLOOR", size: "-", amenity: "Cafe / Retail 57sqm, Communal Boardroom + End of Trip Facilities" },
+  { level: "BASEMENT", size: "-", amenity: "22 Secure Car Spaces" },
+];
 const AmenityArray = ["Coles", "Chemist Warehouse", "Westpac"];
 const food = document.getElementById("FoodBeverage"),
   wellness = document.getElementById("Wellness"),
@@ -47,8 +58,9 @@ const food = document.getElementById("FoodBeverage"),
   amenity = document.getElementById("Amenity"),
   menuOpen = document.querySelector(".menuopen--icon"),
   menuClose = document.querySelector(".menuclose--icon"),
-  menu = document.querySelector(".heading__menu");
-
+  menu = document.querySelector(".heading__menu"),
+  floorPlanContainerM=document.querySelector(".floorplan__content--mobile");
+  const tabcontent = document.getElementsByClassName("map__tabcontent");
 // Menu Handle
 menuOpen.addEventListener("click", () => {
   menu.style.animation = " growFromRight 400ms linear";
@@ -58,20 +70,48 @@ menuClose.addEventListener("click", () => {
   menu.style.animation = " growFromLeft 500ms linear";
   menu.style.display = "none";
 });
-
+//Render map list
 wellness.innerHTML = `<ul class="map__ul">${WellnessArray.map((item) => {
-  return `<li class="map__li">${item}</li>`;
-})}`;
+  return `<li class="map__li">${item}</li>`
+})}`
 food.innerHTML = `<ul class="map__ul">${FoodArray.map((item) => {
-  return `<li class="map__li">${item}</li>`;
+  return `<li class="map__li">${item}</li>`
 })}`;
 cafes.innerHTML = `<ul class="map__ul">${CafesArray.map((item) => {
-  return `<li class="map__li">${item}</li>`;
+  return `<li class="map__li">${item}</li>`
 })}`;
 amenity.innerHTML = `<ul class="map__ul">${AmenityArray.map((item) => {
-  return `<li class="map__li">${item}</li>`;
+  return `<li class="map__li">${item}</li>`
 })}`;
-const tabcontent = document.getElementsByClassName("map__tabcontent");
+//Render floorplans
+
+floorPlanContainerM.innerHTML=`
+
+<table>
+  <tr class="floor__level">
+    <th>Level</th>
+    <th>Size</th>
+    <th>Amenity</th>
+  </tr>
+  <tr class="floor__level">
+    <td class="floorplan__level--p">Centro comercial Moctezuma</td>
+    <td class="floorplan__level--p">Francisco Chang</td>
+    <td class="floorplan__level--p">Mexico</td>
+  </tr>
+  ${floorPlan.map((item)=>{
+    return `  <tr class="floor__level">
+    <td class="floorplan__level--p">${item.level}</td>
+    <td class="floorplan__level--p">${item.size}</td>
+    <td class="floorplan__level--p">${item.amenity}</td>
+  </tr>
+  `
+  })}
+</table>
+
+`
+
+
+
 // tabcontent[0].className+="active"
 function openMap(evt, mapName) {
   var i, tablinks;
