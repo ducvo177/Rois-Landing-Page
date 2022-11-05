@@ -50,36 +50,38 @@
     line-height: 32px;
   }
   .introduce__content--text {
-    margin:0;
+    margin: 0;
     width: 90%;
     display: block;
   }
-  .introduce__content--block{
+  .introduce__content--block {
     box-sizing: border-box;
   }
   .introduce__content--p {
     width: 90%;
     box-sizing: border-box;
     padding: 0;
-    margin: 0 0 150px 0;
+    margin: 0 0 200px 0;
   }
-  .introduce__content--p:last-child{
+  .introduce__content--p:last-child {
     margin-bottom: 50px;
   }
-  .introduce__content--list{
-  
+  .introduce__content--uls {
+    margin: 100px 0;
+  }
+  .introduce__content--list {
     width: 90%;
   }
-  .introduce__content--list:first-child{
-  padding:0;
+  .introduce__content--list:first-child {
+    padding: 0;
   }
-  .floorplan__content{
+  .floorplan__content {
     display: none;
   }
-  .floorplan__content--mobile{
+  .floorplan__content--mobile {
     display: block;
   }
-  .introduce__content--h2{
+  .introduce__content--h2 {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -89,12 +91,31 @@
   .introduce__content--item:last-child {
     border-bottom: 0.5px #1f2940 solid;
   }
-  
-  .introduce__content--p:first-child{
-    padding:0;
+  .introduce__content--item:last-child {
+    border: none;
+  }
+  .introduce__content--list {
+    width: 90vw;
+    margin: 0;
+  }
+  .introduce__content--item:last-child:last-child {
+    border-bottom: 0.5px #1f2940 solid;
+  }
+  .introduce__content--p:first-child {
+    padding: 0;
+  }
+  .introduce__content--text{
+    width: 100%;
+  }
+  .introduce__content--p{
+    width: 100%;
+    margin:0 0 100px 0 ;
   }
   .introduce__content--uls {
     display: block;
+  }
+  .introduce__content--item:last-child{
+    border:none;
   }
   .lesommet {
     display: block;
@@ -137,7 +158,7 @@
     font-size: 30px;
     line-height: 32px;
   }
-  .workspace__content--p{
+  .workspace__content--p {
     padding: 50px 0;
   }
   .workspace__image1 {
@@ -167,6 +188,9 @@
     margin: 0;
     object-fit: cover;
   }
+  .facilities__content {
+    width: 90%;
+  }
   .facilities__content--title {
     font-style: normal;
     font-weight: 400;
@@ -174,12 +198,7 @@
     line-height: 32px;
     width: 90vw;
   }
-  .introduce__content--item:last-child{
-border:none;
-  }
-  .introduce__content--list {
-    width: 90vw;
-  }
+
   .facilities__content {
     padding: 0 5%;
   }
@@ -188,36 +207,45 @@ border:none;
   }
   .floorplan {
     margin: 0;
+
+  }
+  .floorplan__content--mobile{
+    order:2;
+  }
+  .floorplan__img{
+    order:1;
   }
   .floorplan__header {
-    display: block;
+    display: flex;
+    flex-direction: column;
+  
+    
   }
   .floorplan__img {
     width: 100vw;
   }
-.floorplan__content{
-  margin:0;
-  padding:0 5%;
-}
-.floorplan__level--p{
-  font-weight: 400;
-font-size: 12px;
-line-height: 16px;
-}
-.floorplan__level{
- border-bottom:0.5px solid #979797;
-}
+  .floorplan__content {
+    margin: 0;
+    padding: 0 5%;
+  }
+  .floorplan__level--p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .floorplan__level {
+    border-bottom: 0.5px solid #979797;
+  }
   .floorplan__download {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 26px;
     margin: 0 20%;
-    padding:10px;
+    padding: 10px;
   }
-  .floorplan__content{
+  .floorplan__content {
     text-align: left;
-    
   }
   .map {
     display: block;
@@ -240,7 +268,7 @@ line-height: 16px;
     font-size: 14px;
     line-height: 20px;
   }
-  .map__ul{
+  .map__ul {
     white-space: pre-line;
   }
   .zoom_outer {
@@ -256,7 +284,6 @@ line-height: 16px;
   }
   .slider__image {
     height: 30vh;
-    
   }
   .partnership {
     padding: 5% 5% 15% 5%;
@@ -309,12 +336,21 @@ line-height: 16px;
     line-height: 18px;
   }
   .contact__profiles {
+    padding:5% 5%;
     display: block;
     margin: 0;
-    width: 90vw;
+    width: 90%;
   }
   .contact__profile {
-    width: 90%;
+    text-align: center;
+    width: 100%;
     padding-top: 40px;
+  }
+
+  table,td {
+    text-align: left;
+  }
+  td,th{
+    padding:10px 10px;
   }
 }

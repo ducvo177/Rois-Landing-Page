@@ -335,7 +335,7 @@ body {
 }
 .floorplan__content {
   width: 300px;
-  margin-top: 120px;
+  margin-top: 7.8%;
 }
 .floorplan__content--mobile{
   display: none;
@@ -349,12 +349,13 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 15px;
+  margin:7.5% 0;
   /* or 107% */
   color: #1f2940;
 }
 .floorplan__level {
   border-bottom: 0.5px solid #979797;
-  padding-top: 28px;
+  padding-top: 0;
 }
 .floorplan__ground p {
   margin: 11px 0;
@@ -363,7 +364,7 @@ body {
   border-bottom: 0.5px solid #979797;
 }
 .floorplan__ground.first {
-  margin-top: 94px;
+  margin-top: 35%;
 }
 .floorplan__download {
   font-style: normal;
@@ -387,6 +388,9 @@ body {
 }
 .map__text {
   width: 400px;
+}
+.map__content{
+  width: 60%;
 }
 .map__content--title {
   width: 100%;
@@ -468,14 +472,14 @@ body {
   list-style: numeric;
 }
 .zoom_outer {
-  width: 80%;
+  width: 100%;
   height: auto;
   overflow: hidden;
   margin-left: 100px;
   background-color: #26314a;
 }
 #zoom {
-  width: 80%;
+  width: 100%;
   height: auto;
   transform-origin: 0px 0px;
   transform: scale(1) translate(0px, 0px);
@@ -486,7 +490,7 @@ div#zoom > img {
   height: auto;
 }
 .map__image {
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 
@@ -567,6 +571,7 @@ div#zoom > img {
 .contact {
   text-align: center;
   padding: 5% 10%;
+  box-sizing: border-box;
 }
 .contact__title {
   font-style: normal;
@@ -578,8 +583,8 @@ div#zoom > img {
   text-transform: uppercase;
 }
 .contact__profiles {
-  margin: 100px 30%;
+  padding: 100px 30%;
   display: flex;
-  width: 600px;
+  width: 40%;
   justify-content: space-between;
 }

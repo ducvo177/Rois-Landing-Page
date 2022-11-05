@@ -93,11 +93,7 @@ floorPlanContainerM.innerHTML=`
     <th>Size</th>
     <th>Amenity</th>
   </tr>
-  <tr class="floor__level">
-    <td class="floorplan__level--p">Centro comercial Moctezuma</td>
-    <td class="floorplan__level--p">Francisco Chang</td>
-    <td class="floorplan__level--p">Mexico</td>
-  </tr>
+  
   ${floorPlan.map((item)=>{
     return `  <tr class="floor__level">
     <td class="floorplan__level--p">${item.level}</td>
