@@ -76,40 +76,49 @@ menuClose.addEventListener("click", () => {
 
 
 //Render map list
-wellness.innerHTML = `<ul class="map__ul">${WellnessArray.map((item) => {
-  return `<li class="map__li">${item}</li>`
-})}`
-food.innerHTML = `<ul class="map__ul">${FoodArray.map((item) => {
-  return `<li class="map__li">${item}</li>`
-})}`;
-cafes.innerHTML = `<ul class="map__ul">${CafesArray.map((item) => {
-  return `<li class="map__li">${item}</li>`
-})}`;
-amenity.innerHTML = `<ul class="map__ul">${AmenityArray.map((item) => {
-  return `<li class="map__li">${item}</li>`
-})}`;
+wellness.innerHTML =
+  '<ul class="map__ul">' +
+  WellnessArray.map((item) => {
+    return '<li class="map__li">' + item + "</li>";
+  }).join("") +
+  "</ul>";
+food.innerHTML =
+  '<ul class="map__ul">' +
+  FoodArray.map((item) => {
+    return '<li class="map__li">' + item + "</li>";
+  }).join("") +
+  "</ul>";
+cafes.innerHTML =
+  '<ul class="map__ul">' +
+  CafesArray.map((item) => {
+    return '<li class="map__li">' + item + "</li>";
+  }).join("") +
+  "</ul>";
+amenity.innerHTML =
+  '<ul class="map__ul">' +
+  AmenityArray.map((item) => {
+    return '<li class="map__li">' + item + "</li>";
+  }).join("") +
+  "</ul>";
 //Render floorplans
 
-floorPlanContainerM.innerHTML=`
-
-<table>
-  <tr class="floor__level">
-    <th>Level</th>
-    <th>Size</th>
-    <th>Amenity</th>
-  </tr>
-  
-  ${floorPlan.map((item,index)=>{
-    return `  <tr class="floor__level">
-    <td class="floorplan__level--p">${item.level}</td>
-    <td class="floorplan__level--p">${item.size}</td>
-    <td class="floorplan__level--p">${item.amenity}</td>
-  </tr>
-  `
-  })}
-</table>
-
-`
+floorPlanContainerM.innerHTML =
+  '<table> <tr class="floor__level"> <th>Level</th><th>Size</th><th>Amenity</th></tr>' +
+  floorPlan
+    .map((item) => {
+      return (
+        '<tr class="floor__level"><td class="floorplan__level--p">' +
+        item.level +
+        '</td><td class="floorplan__level--p">' +
+        item.size +
+        '</td><td class="floorplan__level--p">' +
+        item.amenity +
+        "</td></tr>"
+       
+      );
+    })
+    .join("") +
+  "</table>";
 
 //Maptab Handle
 function openMap(evt, mapName) {
