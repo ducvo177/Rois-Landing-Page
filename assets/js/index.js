@@ -42,13 +42,33 @@ const CafesArray = [
 ];
 const floorPlan = [
   { level: "ROOFTOP", size: "106sqm", amenity: "TERRACE BAR" },
-  { level: "LEVEL 06", size: "300sqm", amenity: "COMMERCIAL OFFICE + 36.1sqm BALCONIES" },
-  { level: "LEVEL 05", size: "300sqm", amenity: "COMMERCIAL OFFICE + 36.1sqm BALCONIES" },
-  { level: "LEVEL 04", size: "356sqm", amenity: "COMMERCIAL OFFICE + 36.1sqm BALCONIES" },
-  { level: "LEVEL 03", size: "356sqm", amenity: "COMMERCIAL OFFICE + 32.5sqm BALCONY" },
+  {
+    level: "LEVEL 06",
+    size: "300sqm",
+    amenity: "COMMERCIAL OFFICE + 36.1sqm BALCONIES",
+  },
+  {
+    level: "LEVEL 05",
+    size: "300sqm",
+    amenity: "COMMERCIAL OFFICE + 36.1sqm BALCONIES",
+  },
+  {
+    level: "LEVEL 04",
+    size: "356sqm",
+    amenity: "COMMERCIAL OFFICE + 36.1sqm BALCONIES",
+  },
+  {
+    level: "LEVEL 03",
+    size: "356sqm",
+    amenity: "COMMERCIAL OFFICE + 32.5sqm BALCONY",
+  },
   { level: "LEVEL 02", size: "300sqm", amenity: "Commercial Office" },
   { level: "LEVEL 01", size: "300sqm", amenity: "Commercial Office" },
-  { level: "GROUND FLOOR", size: "-", amenity: "Cafe / Retail 57sqm, Communal Boardroom + End of Trip Facilities" },
+  {
+    level: "GROUND FLOOR",
+    size: "-",
+    amenity: "Cafe / Retail 57sqm, Communal Boardroom + End of Trip Facilities",
+  },
   { level: "BASEMENT", size: "-", amenity: "22 Secure Car Spaces" },
 ];
 const AmenityArray = ["Coles", "Chemist Warehouse", "Westpac"];
@@ -59,10 +79,9 @@ const food = document.getElementById("FoodBeverage"),
   menuOpen = document.querySelector(".menuopen--icon"),
   menuClose = document.querySelector(".menuclose--icon"),
   menu = document.querySelector(".heading__menu"),
-  floorPlanContainerM=document.querySelector(".floorplan__content--mobile");
-  const tabContent = document.getElementsByClassName("map__tabcontent"),
-  mapLayer=document.getElementsByClassName("map__layer");
-
+  floorPlanContainerM = document.querySelector(".floorplan__content--mobile");
+const tabContent = document.getElementsByClassName("map__tabcontent"),
+  mapLayer = document.getElementsByClassName("map__layer");
 
 // Menu Handle
 menuOpen.addEventListener("click", () => {
@@ -74,42 +93,50 @@ menuClose.addEventListener("click", () => {
   menu.style.display = "none";
 });
 
-
 //Render map list
-wellness.innerHTML = `<ul class="map__ul">${WellnessArray.map((item) => {
-  return `<li class="map__li">${item}</li>`
-})}`
-food.innerHTML = `<ul class="map__ul">${FoodArray.map((item) => {
-  return `<li class="map__li">${item}</li>`
-})}`;
-cafes.innerHTML = `<ul class="map__ul">${CafesArray.map((item) => {
-  return `<li class="map__li">${item}</li>`
-})}`;
-amenity.innerHTML = `<ul class="map__ul">${AmenityArray.map((item) => {
-  return `<li class="map__li">${item}</li>`
-})}`;
+wellness.innerHTML =
+  '<ul class="map__ul">' +
+  WellnessArray.map((item) => {
+    return '<li class="map__li">' + item + "</li>";
+  }).join("") +
+  "</ul>";
+food.innerHTML =
+  '<ul class="map__ul">' +
+  FoodArray.map((item) => {
+    return '<li class="map__li">' + item + "</li>";
+  }).join("") +
+  "</ul>";
+cafes.innerHTML =
+  '<ul class="map__ul">' +
+  CafesArray.map((item) => {
+    return '<li class="map__li">' + item + "</li>";
+  }).join("") +
+  "</ul>";
+amenity.innerHTML =
+  '<ul class="map__ul">' +
+  AmenityArray.map((item) => {
+    return '<li class="map__li">' + item + "</li>";
+  }).join("") +
+  "</ul>";
 //Render floorplans
 
-floorPlanContainerM.innerHTML=`
-
-<table>
-  <tr class="floor__level">
-    <th>Level</th>
-    <th>Size</th>
-    <th>Amenity</th>
-  </tr>
-  
-  ${floorPlan.map((item,index)=>{
-    return `  <tr class="floor__level">
-    <td class="floorplan__level--p">${item.level}</td>
-    <td class="floorplan__level--p">${item.size}</td>
-    <td class="floorplan__level--p">${item.amenity}</td>
-  </tr>
-  `
-  })}
-</table>
-
-`
+floorPlanContainerM.innerHTML =
+  '<table> <tr class="floor__level"> <th>Level</th><th>Size</th><th>Amenity</th></tr>' +
+  floorPlan
+    .map((item) => {
+      return (
+        '<tr class="floor__level"><td class="floorplan__level--p">' +
+        item.level +
+        '</td><td class="floorplan__level--p">' +
+        item.size +
+        '</td><td class="floorplan__level--p">' +
+        item.amenity +
+        "</td></tr>"
+       
+      );
+    })
+    .join("") +
+  "</table>";
 
 //Maptab Handle
 function openMap(evt, mapName) {
@@ -118,13 +145,13 @@ function openMap(evt, mapName) {
     tabContent[i].style.display = "none";
   }
   for (i = 0; i < mapLayer.length; i++) {
-    mapLayer[i].classList.remove("active")
+    mapLayer[i].classList.remove("active");
   }
   tablinks = document.getElementsByClassName("map__tablinks");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  document.getElementsByClassName(mapName+"-map")[0].classList.add("active");
+  document.getElementsByClassName(mapName + "-map")[0].classList.add("active");
   document.getElementById(mapName).style.display = "block";
   evt.currentTarget.className += " active";
 }
@@ -142,13 +169,13 @@ function setTransformMouse() {
     "translate(" + pointX + "px, " + pointY + "px) scale(" + scale + ")";
 }
 function setTransformScroll() {
-  if(pointX<0&&pointY<0&&scale>0){
-  zoom.style.transform =
-    "translate(" + pointX + "px, " + pointY + "px) scale(" + scale + ")";
-  }else{
-    pointX=0;
-    pointY=0;
-    scale=1;
+  if (pointX < 0 && pointY < 0 && scale > 0) {
+    zoom.style.transform =
+      "translate(" + pointX + "px, " + pointY + "px) scale(" + scale + ")";
+  } else {
+    pointX = 0;
+    pointY = 0;
+    scale = 1;
   }
 }
 
@@ -180,15 +207,12 @@ zoom.onwheel = function (e) {
   delta > 0 ? (scale *= 1.2) : (scale /= 1.2);
   pointX = e.clientX - xs * scale;
   pointY = e.clientY - ys * scale;
-  if(pointX > 0 || pointY>0||scale<1){
-    pointX=0;
-    pointY=0;
+  if (pointX > 0 || pointY > 0 || scale < 1) {
+    pointX = 0;
+    pointY = 0;
     scale = 1;
-
   }
-    setTransformScroll();
-  
- 
+  setTransformScroll();
 };
 
 // Slider

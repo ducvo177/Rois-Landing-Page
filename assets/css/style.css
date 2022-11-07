@@ -500,7 +500,7 @@ html {
   font-size: 16px;
   line-height: 23px;
   /* or 144% */
-
+  padding:5px 0;
   color: #1f2940;
 }
 .map__ul {
