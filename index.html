@@ -28,8 +28,13 @@
       <div class="heading__image">
         <h1 class="heading__image--title">ROIS</h1>
         <h3 class="heading__image--location">11-13 Pearson Street, Cremorne</h3>
-        <div class="heading__logo"></div>
-        <button class="menuopen--icon">
+        <div class="heading__logo--container">
+            <img src="./assets/images/Logo.png" class="heading__logo"
+            loading="lazy"></img>
+          </div>
+        </div>
+        
+        <button class="menuopen--icon menu__icon">
           <i class="ti-menu"></i>
         </button>
       </div>
@@ -37,7 +42,7 @@
         <div class="heading__menu--content">
           <h1 class="heading__menu--title">
             ROIS
-            <button class="menuclose--icon">
+            <button class="menuclose--icon menu__icon">
               <i class="ti-close"></i>
             </button>
           </h1>
@@ -80,6 +85,7 @@
           src="./assets/images/Building.png"
           alt="bulding image"
           class="introduce__image"
+          loading="lazy"
         />
         <div class="introduce__content">
           <h2 class="introduce__content--title">Build your empire</h2>
@@ -113,6 +119,7 @@
                       src="./assets/images/Roof.png"
                       alt=""
                       class="introduce__content--icon"
+                      loading="lazy"
                     />
                     <h2 class="introduce__content--h2">
                       Rooftop with uninterrupted views to CBD
@@ -123,6 +130,7 @@
                       src="./assets/images/Flexible.png"
                       alt=""
                       class="introduce__content--icon"
+                      loading="lazy"
                     />
                     <h2 class="introduce__content--h2">
                       Flexible floorplates, allowing for subdivision
@@ -133,6 +141,7 @@
                       src="./assets/images/Complimentry.png"
                       alt=""
                       class="introduce__content--icon"
+                      loading="lazy"
                     />
                     <h2 class="introduce__content--h2">
                       Complimentry ground floor boardroom
@@ -143,6 +152,7 @@
                       src="./assets/images/Cafe.png"
                       alt=""
                       class="introduce__content--icon"
+                      loading="lazy"
                     />
                     <h2 class="introduce__content--h2">Ground floor café</h2>
                   </li>
@@ -153,6 +163,7 @@
                       src="./assets/images/Terrace.png"
                       alt=""
                       class="introduce__content--icon"
+                      loading="lazy"
                     />
                     <h2 class="introduce__content--h2">
                       Exclusive terrace areas on levels 3, 4 & 5
@@ -163,6 +174,7 @@
                       src="./assets/images/Luxurious.png"
                       alt=""
                       class="introduce__content--icon"
+                      loading="lazy"
                     />
                     <h2 class="introduce__content--h2">Luxurious end of trip</h2>
                   </li>
@@ -171,6 +183,7 @@
                       src="./assets/images/Car.png"
                       alt=""
                       class="introduce__content--icon"
+                      loading="lazy"
                     />
                     <h2 class="introduce__content--h2">22 Secure car space</h2>
                   </li>
@@ -179,6 +192,7 @@
                       src="./assets/images/Indivisual.png"
                       alt=""
                       class="introduce__content--icon"
+                      loading="lazy"
                     />
                     <h2 class="introduce__content--h2">
                       Individual climate control & double glazed windows
@@ -202,6 +216,7 @@
           src="./assets/images/Lesommet.png"
           alt="le sommet"
           class="lesommet__image"
+          loading="lazy"
         />
         <div class="lesommet__content">
           <h1 class="lesommet__content--title">The Crowning Glory</h1>
@@ -230,21 +245,27 @@
             light to each level.
           </p>
         </div>
-        <img
+        <div class="workspace__img1block">
+          <img
           src="./assets/images/Workspace.png"
           class="workspace__image1"
           alt="workspace"
+          loading="lazy"
         />
+        </div>
+     
         <div class="workspace__imgblock">
           <img
             src="./assets/images/Workspace2.png"
             alt="workspace2"
             class="workspace__imgblock--image2"
+            loading="lazy"
           />
           <img
             src="./assets/images/Workspace3.png"
             alt="workspace3"
             class="workspace__imgblock--image3"
+            loading="lazy"
           />
         </div>
       </div>
@@ -262,22 +283,22 @@
             facilities with 8 showers in both the male and female changerooms,
             including secure double lockers along with 22 bike racks.
           </p>
-          <ul class="introduce__content--list">
-            <li class="introduce__content--item">
+          <ul class="facilities__content--list">
+            <li class="facilities__content--item">
               <img
                 src="./assets/images/Roof.png"
                 alt=""
-                class="introduce__content--icon"
+                class="facilities__content--icon"
               />
-              <h2 class="introduce__content--h2">4 Showers</h2>
+              <h2 class="facilities__content--h2">4 Showers</h2>
             </li>
-            <li class="introduce__content--item">
+            <li class="facilities__content--item">
               <img
                 src="./assets/images/Flexible.png"
                 alt=""
-                class="introduce__content--icon"
+                class="facilities__content--icon"
               />
-              <h2 class="introduce__content--h2">8 Bike Racks</h2>
+              <h2 class="facilities__content--h2">8 Bike Racks</h2>
             </li>
           </ul>
         </div>
@@ -285,6 +306,7 @@
           src="./assets/images/Facility.png"
           alt="End of trip facilities"
           class="facilities__img"
+          loading="lazy"
         />
       </div>
       <!-- Floor plans -->
@@ -362,6 +384,7 @@
             src="./assets/images/Floorplan.png"
             alt="floorplan"
             class="floorplan__img"
+            loading="lazy"
           />
         </div>
         <br /><br />
@@ -376,13 +399,23 @@
       </div>
       <!-- Map -->
       <div class="map">
-        <div class="map__text">
+        <div class="map__text--mobile">
           <h1 class="map__content--title">The Kingship of Cremorne</h1>
           <p class="map__content--p">
             Located in the heart of Cremorne, ROIS is central to numerous
             amenity. An abundance of Melbourne’s best cafes, restaurants, and
             bars are all within a short stroll.
           </p>
+        </div>
+        <div class="map__text">
+           <div class="map__text--desktop">
+            <h1 class="map__content--title">The Kingship of Cremorne</h1>
+          <p class="map__content--p">
+            Located in the heart of Cremorne, ROIS is central to numerous
+            amenity. An abundance of Melbourne’s best cafes, restaurants, and
+            bars are all within a short stroll.
+          </p>
+           </div>
           <div class="map__tab">
             <button
               class="map__tablinks FoodBeverage active"
@@ -409,7 +442,7 @@
               Amenity
             </button>
           </div>
-          <div id="FoodBeverage" class="map__tabcontent"></div>
+          <div id="FoodBeverage" class="map__tabcontent" style="display: block;"></div>
           <div id="Wellness" class="map__tabcontent"></div>
           <div id="Cafés" class="map__tabcontent"></div>
           <div id="Amenity" class="map__tabcontent"></div>
@@ -417,11 +450,23 @@
         <div class="map__content">
           <div class="zoom_outer">
             <div id="zoom">
-              <img
-                src="./assets/images/Map/Map1.png"
+              <div class="map__container">
+                <img
+                src="./assets/images/Map/_ROIS_Amenity Map_Interactive_Base.svg"
                 alt="Map1"
-                class="map__image"
+                class="map__image map__b"
+                loading="lazy"
               />
+             
+                <img src="./assets/images/Map/ROIS_Amenity Map_Interactive_Food&Beverage.svg" alt="Food place" class="map__image map__layer active FoodBeverage-map" id="FoodBeverage-map" loading="lazy">
+                <img src="./assets/images/Map/ROIS_Amenity Map_Interactive_Wellness.svg" alt="Wellness place" class="map__image map__layer Wellness-map" loading="lazy">
+                <img src="./assets/images/Map/ROIS_Amenity Map_Interactive_Cafes.svg" alt="Cafés place" class="map__image map__layer Cafés-map" loading="lazy">
+                <img src="./assets/images/Map/ROIS_Amenity Map_Interactive_Amenity.svg" alt="Amenity place" class="map__image map__layer Amenity-map" loading="lazy">
+          
+          
+              
+              </div>
+            
             </div>
           </div>
         </div>
@@ -433,49 +478,63 @@
             src="./assets/images/Slider/Slide1.png"
             alt="Slider1"
             class="slider__image"
+            loading="lazy"
           />
+          <p class="slider__describ">An abundance of wellness facilities including Volt Fitness</p>
         </div>
         <div>
           <img
             src="./assets/images/Slider/Slide2.png"
             alt="Slider2"
             class="slider__image"
+            loading="lazy"
           />
+          <p class="slider__describ"> Step off the train platform and walk directly into your new office</p>
         </div>
         <div>
           <img
             src="./assets/images/Slider/Slide3.png"
             alt="Slider3"
             class="slider__image"
+            loading="lazy"
           />
+          <p class="slider__describ">Close proximity to the Main Yarra Trail</p>
         </div>
         <div>
           <img
             src="./assets/images/Slider/Slide4.png"
             alt="Slider4"
             class="slider__image"
+            loading="lazy"
           />
+          <p class="slider__describ">Surrounded by renowned restaurants like New Quarter</p>
         </div>
         <div>
           <img
             src="./assets/images/Slider/Slide5.png"
             alt="Slider5"
             class="slider__image"
+            loading="lazy"
           />
+          <p class="slider__describ">Home to Melbourne's best lifestyle precinct</p>
         </div>
         <div>
           <img
             src="./assets/images/Slider/Slide6.png"
             alt="Slider6"
             class="slider__image"
+            loading="lazy"
           />
+          <p class="slider__describ">A long list of new locals</p>
         </div>
         <div>
           <img
             src="./assets/images/Slider/Slide7.png"
             alt="Slider7"
             class="slider__image"
+            loading="lazy"
           />
+          <p class="slider__describ">Le Sommet is the perfect escape from your working day to refresh and inspire</p>
         </div>
       </div>
       <!-- Partnership  -->

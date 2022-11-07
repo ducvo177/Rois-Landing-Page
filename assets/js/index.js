@@ -60,7 +60,10 @@ const food = document.getElementById("FoodBeverage"),
   menuClose = document.querySelector(".menuclose--icon"),
   menu = document.querySelector(".heading__menu"),
   floorPlanContainerM=document.querySelector(".floorplan__content--mobile");
-  const tabcontent = document.getElementsByClassName("map__tabcontent");
+  const tabContent = document.getElementsByClassName("map__tabcontent"),
+  mapLayer=document.getElementsByClassName("map__layer");
+
+
 // Menu Handle
 menuOpen.addEventListener("click", () => {
   menu.style.animation = " growFromRight 400ms linear";
@@ -70,6 +73,8 @@ menuClose.addEventListener("click", () => {
   menu.style.animation = " growFromLeft 500ms linear";
   menu.style.display = "none";
 });
+
+
 //Render map list
 wellness.innerHTML = `<ul class="map__ul">${WellnessArray.map((item) => {
   return `<li class="map__li">${item}</li>`
@@ -94,7 +99,7 @@ floorPlanContainerM.innerHTML=`
     <th>Amenity</th>
   </tr>
   
-  ${floorPlan.map((item)=>{
+  ${floorPlan.map((item,index)=>{
     return `  <tr class="floor__level">
     <td class="floorplan__level--p">${item.level}</td>
     <td class="floorplan__level--p">${item.size}</td>
@@ -106,18 +111,20 @@ floorPlanContainerM.innerHTML=`
 
 `
 
-
-
-// tabcontent[0].className+="active"
+//Maptab Handle
 function openMap(evt, mapName) {
   var i, tablinks;
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+  for (i = 0; i < tabContent.length; i++) {
+    tabContent[i].style.display = "none";
+  }
+  for (i = 0; i < mapLayer.length; i++) {
+    mapLayer[i].classList.remove("active")
   }
   tablinks = document.getElementsByClassName("map__tablinks");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
+  document.getElementsByClassName(mapName+"-map")[0].classList.add("active");
   document.getElementById(mapName).style.display = "block";
   evt.currentTarget.className += " active";
 }
@@ -130,9 +137,19 @@ var scale = 1,
   start = { x: 0, y: 0 },
   zoom = document.getElementById("zoom");
 
-function setTransform() {
+function setTransformMouse() {
   zoom.style.transform =
     "translate(" + pointX + "px, " + pointY + "px) scale(" + scale + ")";
+}
+function setTransformScroll() {
+  if(pointX<0&&pointY<0&&scale>0){
+  zoom.style.transform =
+    "translate(" + pointX + "px, " + pointY + "px) scale(" + scale + ")";
+  }else{
+    pointX=0;
+    pointY=0;
+    scale=1;
+  }
 }
 
 zoom.onmousedown = function (e) {
@@ -152,7 +169,7 @@ zoom.onmousemove = function (e) {
   }
   pointX = e.clientX - start.x;
   pointY = e.clientY - start.y;
-  setTransform();
+  setTransformMouse();
 };
 
 zoom.onwheel = function (e) {
@@ -163,8 +180,15 @@ zoom.onwheel = function (e) {
   delta > 0 ? (scale *= 1.2) : (scale /= 1.2);
   pointX = e.clientX - xs * scale;
   pointY = e.clientY - ys * scale;
+  if(pointX > 0 || pointY>0||scale<1){
+    pointX=0;
+    pointY=0;
+    scale = 1;
 
-  setTransform();
+  }
+    setTransformScroll();
+  
+ 
 };
 
 // Slider
@@ -174,7 +198,7 @@ $(".slider").slick({
   arrows: false,
   autoplay: true,
   slidesToShow: 3,
-  slidesToScroll: 3,
+  slidesToScroll: 1,
   autoplaySpeed: 3000,
   responsive: [
     {

@@ -8,29 +8,25 @@
     width: 100vw;
     background-attachment: fixed;
   }
-  .menuopen--icon {
-    position: absolute;
-    right: 10%;
-    top: 30px;
-    font-size: 20px;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
+  .menu__icon {
+    top: 8%;
+    right: 5%;
+  }
+  .heading__logo {
+    margin: 45% 43% 0 43%;
   }
   .heading__menu {
     width: 100%;
-  }
-  .menuclose--icon {
-    color: white;
-    position: absolute;
-    right: 10%;
-    top: 30px;
   }
   .heading__menu--link {
     font-size: 30px;
   }
   .heading__menu--title {
-    font-size: 60px;
+    font-size: 80px;
+    margin: 0;
+  }
+  .heading__menu--content {
+    margin-top: 0px;
   }
   .introduce__title {
     font-weight: 400;
@@ -85,7 +81,8 @@
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 47px;
+    
   }
 
   .introduce__content--item:last-child {
@@ -104,18 +101,18 @@
   .introduce__content--p:first-child {
     padding: 0;
   }
-  .introduce__content--text{
+  .introduce__content--text {
     width: 100%;
   }
-  .introduce__content--p{
+  .introduce__content--p {
     width: 100%;
-    margin:0 0 100px 0 ;
+    margin: 0 0 100px 0;
   }
   .introduce__content--uls {
     display: block;
   }
-  .introduce__content--item:last-child{
-    border:none;
+  .introduce__content--item:last-child {
+    border: none;
   }
   .lesommet {
     display: block;
@@ -136,14 +133,17 @@
     line-height: 32px;
   }
   .workspace {
-    width: 90vw;
-    padding: 5% 5%;
+    width: 100vw;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding:15% 0;
   }
   .workspace__content {
     width: 100%;
     display: block;
-    padding: 0;
+    padding:0 5%;
+    order:2;
   }
   .workspace__content--p {
     width: 100%;
@@ -151,6 +151,10 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+  }
+  .workspace__img1block{
+    order:1;
+    
   }
   .workspace__content--title {
     width: 100%;
@@ -163,33 +167,40 @@
   }
   .workspace__image1 {
     top: 0;
-    width: 90vw;
+    width: 100vw;
   }
   .workspace__imgblock {
+    order:3;
     display: block;
+    padding:0 5%;
     margin: 0;
   }
   .workspace__imgblock--image2 {
     width: 90vw;
+    margin:5% 0;
   }
   .workspace__imgblock--image3 {
     width: 90vw;
     margin: 0;
   }
   .facilities {
-    display: block;
-    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    padding: 15% 0;
     margin: 0;
     box-sizing: border-box;
+    background-color:#EEEEDF;
   }
   .facilities__img {
     width: 100vw;
     height: auto;
     margin: 0;
     object-fit: cover;
+    order:1;
   }
   .facilities__content {
     width: 90%;
+    order:2;
   }
   .facilities__content--title {
     font-style: normal;
@@ -206,20 +217,17 @@
     width: 90vw;
   }
   .floorplan {
-    margin: 0;
-
+    padding:0;
   }
-  .floorplan__content--mobile{
-    order:2;
+  .floorplan__content--mobile {
+    order: 2;
   }
-  .floorplan__img{
-    order:1;
+  .floorplan__img {
+    order: 1;
   }
   .floorplan__header {
     display: flex;
     flex-direction: column;
-  
-    
   }
   .floorplan__img {
     width: 100vw;
@@ -241,32 +249,55 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 26px;
-    margin: 0 20%;
+    margin: 0 22%;
     padding: 10px;
   }
   .floorplan__content {
     text-align: left;
   }
   .map {
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding: 0;
   }
+
   .map__text {
     width: 90vw;
     padding: 5% 5%;
+    order:2;
   }
-
+  .map__tab{
+    width: 100%;
+    margin:0;
+  }
+  .map__text--mobile{
+    display:block;
+    padding: 5% 5%;
+    
+  }
+  .map__content{
+    width: 80vw;
+    height: 80vw;  
+    top:25vh;
+    order:1;
+    margin: 10vh 0 0 0;
+  }
   .map__content--title {
+    
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
     line-height: 32px;
   }
   .map__content--p {
+
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+  }
+  .map__text--desktop{
+    display: none;
   }
   .map__ul {
     white-space: pre-line;
@@ -279,7 +310,7 @@
     width: 100vw;
   }
   .slider {
-    padding: 5% 4%;
+    padding: 5% 0 5% 4%;
     box-sizing: border-box;
   }
   .slider__image {
@@ -336,7 +367,7 @@
     line-height: 18px;
   }
   .contact__profiles {
-    padding:5% 5%;
+    padding: 5% 5%;
     display: block;
     margin: 0;
     width: 90%;
@@ -347,10 +378,12 @@
     padding-top: 40px;
   }
 
-  table,td {
+  table,
+  td {
     text-align: left;
   }
-  td,th{
-    padding:10px 10px;
+  td,
+  th {
+    padding: 10px 10px;
   }
 }
