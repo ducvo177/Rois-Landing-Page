@@ -76,22 +76,47 @@ const food = document.getElementById("FoodBeverage"),
   wellness = document.getElementById("Wellness"),
   cafes = document.getElementById("Cafés"),
   amenity = document.getElementById("Amenity"),
-  menuOpen = document.querySelector(".menuopen--icon"),
-  menuClose = document.querySelector(".menuclose--icon"),
+  menuIcon = document.querySelector(".menu__icon"),
   menu = document.querySelector(".heading__menu"),
   floorPlanContainerM = document.querySelector(".floorplan__content--mobile");
 const tabContent = document.getElementsByClassName("map__tabcontent"),
   mapLayer = document.getElementsByClassName("map__layer");
 
 // Menu Handle
-menuOpen.addEventListener("click", () => {
-  menu.style.animation = " growFromRight 400ms linear";
-  menu.style.display = "block";
+menuIcon.addEventListener("click", () => {
+  if (menuIcon.classList.contains("active")) {
+    menu.style.animation = "Close 500ms linear";
+    menu.style.visibility = "hidden";
+    menu.style.transformOrigin = "left center";
+    menuIcon.classList.remove("active");
+  } else {
+    menu.style.animation = " growFromRight 600ms ease-in-out";
+    menu.style.visibility = "visible";
+    menu.style.transformOrigin = "right center";
+    menu.classList.add("active");
+    menuIcon.classList.add("active");
+  }
 });
-menuClose.addEventListener("click", () => {
-  menu.style.animation = " growFromLeft 500ms linear";
-  menu.style.display = "none";
-});
+
+var forEach = function (t, o, r) {
+  if ("[object Object]" === Object.prototype.toString.call(t))
+    for (var c in t)
+      Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
+  else for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t);
+};
+
+var hamburgers = document.querySelectorAll(".hamburger");
+if (hamburgers.length > 0) {
+  forEach(hamburgers, function (hamburger) {
+    hamburger.addEventListener(
+      "click",
+      function () {
+        this.classList.toggle("is-active");
+      },
+      false
+    );
+  });
+}
 
 //Render map list
 wellness.innerHTML =
@@ -125,14 +150,15 @@ floorPlanContainerM.innerHTML =
   floorPlan
     .map((item) => {
       return (
-        '<tr class="floor__level"><td class="floorplan__level--p">' +
+        '<tr class="floor__level"><td >' +
+        "<strong>" +
         item.level +
-        '</td><td class="floorplan__level--p">' +
+        "</strong>" +
+        "</td><td >" +
         item.size +
-        '</td><td class="floorplan__level--p">' +
+        "</td><td >" +
         item.amenity +
         "</td></tr>"
-       
       );
     })
     .join("") +

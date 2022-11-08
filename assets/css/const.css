@@ -1,28 +1,28 @@
 @font-face {
   font-family: MaisonExtendBold;
-  src: url(/assets/fonts/MaisonNeue-ExtendedBold.woff);
+  src: url(../fonts/MaisonNeue-ExtendedBold.woff);
 }
 @font-face {
   font-family: MaisonExtendBook;
-  src: url(/assets/fonts/MaisonNeue-Book.woff);
+  src: url(../fonts/MaisonNeue-Book.woff);
 }
 @font-face {
   font-family: MaisonExtendDemiBold;
-  src: url(/assets/fonts/MaisonNeue-ExtendedDemiBold.woff);
+  src: url(../fonts/MaisonNeue-ExtendedDemiBold.woff);
 }
 @font-face {
   font-family: MaisonExtendLight;
-  src: url(/assets/fonts/MaisonNeue-ExtendedLight.woff);
+  src: url(../fonts/MaisonNeue-ExtendedLight.woff);
 }
 @font-face {
   font-family: MaisonExtendMedium;
-  src: url(/assets/fonts/MaisonNeue-ExtendedMedium.woff);
+  src: url(../fonts/MaisonNeue-ExtendedMedium.woff);
 }
 @font-face {
   font-family: OggItalic;
-  src: url(/assets/fonts/Ogg\ Italic.woff);
+  src: url(../fonts/Ogg\ Italic.woff);
 }
 @font-face {
   font-family: OggRoman;
-  src: url(/assets/fonts/Ogg\ Roman.woff);
+  src: url(../fonts/Ogg\ Roman.woff);
 }
