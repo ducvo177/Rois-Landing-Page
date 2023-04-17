@@ -5,175 +5,229 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rois Landing Page</title>
-    <link rel="stylesheet" href="./assets/css/const.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <link rel="stylesheet" href="assets/css/const.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/themify-icons/themify-icons.css"
+    />
+    <link href="./assets/hamburgers-master/dist/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/mobile.css" />
   </head>
   <body>
     <div class="heading">
       <div class="heading__image">
-        <h1 class="heading__image--title">ROIS</h1>
+          <h1 class="heading__image--title">ROIS</h1> 
         <h3 class="heading__image--location">11-13 Pearson Street, Cremorne</h3>
-        <div class="heading__logo"></div>
-        <i class="fa-regular fa-bars menuopen--icon"></i>
+        <div class="heading__logo--container">
+            <img src="./assets/images/Logo.svg" class="heading__logo"
+            loading="lazy"></img>
+          </div>
+        </div>
+        
+     
+        <div class="hamburger  hamburger--spring menu__icon menuopen menuclose">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+
       </div>
       <div class="heading__menu">
         <div class="heading__menu--content">
-          <h1 class="heading__menu--title">ROIS</h1>
-          <i class="fa-regular fa-bars menuclose--icon"></i>
+          <h1 class="heading__menu--title">
+            ROIS
+          
+          </h1>
+
           <ul class="heading__menu--list">
             <li class="heading__menu--item">
-              <a href="" class="heading__menu--link">Workspace</a>
+              <a href="#workspace" class="heading__menu--link">Workspace</a>
             </li>
             <li class="heading__menu--item">
-              <a href="" class="heading__menu--link">Lifestyle</a>
+              <a href="#lesommet" class="heading__menu--link">Lifestyle</a>
             </li>
             <li class="heading__menu--item">
-              <a href="" class="heading__menu--link">Project Team</a>
+              <a href="#partnership" class="heading__menu--link"
+                >Project Team</a
+              >
             </li>
             <li class="heading__menu--item">
-              <a href="" class="heading__menu--link">Enquire</a>
+              <a href="#contact" class="heading__menu--link">Enquire</a>
             </li>
           </ul>
         </div>
         <div class="heading__footer">
-          <a href="http://" class="heading__footer--link">MANOR x VUJIC</a>
-          <p class="heading__footer--location">
+          <a href="#" class="heading__footer--link">MANOR x VUJIC</a><br />
+          <a
+            href="https://www.google.com/maps/place/11+Pearson+St,+Cremorne+VIC+3121,+%C3%9Ac/@-37.8269427,144.9943603,17z/data=!3m1!4b1!4m5!3m4!1s0x6ad6428db1bee085:0xf8b9ed68355c0cc!8m2!3d-37.826947!4d144.996549?hl=vi"
+            class="heading__footer--location"
+          >
             11-13 Pearson Street, Cremorne
-          </p>
+          </a>
         </div>
       </div>
     </div>
     <div class="content">
       <!-- Introduce -->
       <div class="introduce">
-        <h1 class="introduce__title">
+        <h1 class="introduce__title"  data-aos="fade-up"   data-aos-duration="2000">
           A new benchmark for boutique offices in Cremorne.
         </h1>
         <img
           src="./assets/images/Building.png"
           alt="bulding image"
           class="introduce__image"
+          loading="lazy"
+          data-aos="fade-up"   data-aos-duration="2000"
         />
         <div class="introduce__content">
           <h2 class="introduce__content--title">Build your empire</h2>
           <div class="introduce__content--container">
-            <div class="introduce__content--left">
-              <p class="introduce__content--p">
-                ROIS will elevate your business, setting a new benchmark for
-                boutique offices in Cremorne. Located in the heart of
-                Melbourne’s Tech Hub, 11 Pearson Street is the place where
-                businesses want to be and be seen. ROIS is a premium product
-                without comparison. The craftmanship and level of detail is
-                second to none. Featuring 6 levels of premium office space the
-                development has been tailored for businesses seeking flight to
-                quality.
-              </p>
-
-              <ul class="introduce__content--list">
-                <li class="introduce__content--item">
-                  <img
-                    src="./assets/images/Roof.png"
-                    alt=""
-                    class="introduce__content--icon"
-                  />
-                  <h2 class="introduce__content--h2">
-                    Rooftop with uninterrupted views to CBD
-                  </h2>
-                </li>
-                <li class="introduce__content--item">
-                  <img
-                    src="./assets/images/Flexible.png"
-                    alt=""
-                    class="introduce__content--icon"
-                  />
-                  <h2 class="introduce__content--h2">
-                    Flexible floorplates, allowing for subdivision
-                  </h2>
-                </li>
-                <li class="introduce__content--item">
-                  <img
-                    src="./assets/images/Complimentry.png"
-                    alt=""
-                    class="introduce__content--icon"
-                  />
-                  <h2 class="introduce__content--h2">
-                    Complimentry ground floor boardroom
-                  </h2>
-                </li>
-                <li class="introduce__content--item">
-                  <img
-                    src="./assets/images/Cafe.png"
-                    alt=""
-                    class="introduce__content--icon"
-                  />
-                  <h2 class="introduce__content--h2">Ground floor café</h2>
-                </li>
-              </ul>
-            </div>
-            <div class="introduce__content--right">
-              <p class="introduce__content--p">
+            <div class="introduce__content--block">
+              <div class="introduce__content--text">
+                <p class="introduce__content--p">
+                  ROIS will elevate your business, setting a new benchmark for
+                  boutique offices in Cremorne. Located in the heart of
+                  Melbourne’s Tech Hub, 11 Pearson Street is the place where
+                  businesses want to be and be seen. ROIS is a premium product
+                  without comWellnesson. The craftmanship and level of detail is
+                  second to none. Featuring 6 levels of premium office space the
+                  development has been tailored for businesses seeking flight to
+                  quality.
+                </p>
+                <p class="introduce__content--p">
                 The rooftop at ROIS is unlike anything in Cremorne, offering
                 uninterupted views across Melbourne’s iconic sporting precinct.
                 This expansive third space provides an incredible breakout area
                 for your staff and entertainment space for your clients. Make
                 your office the envy of your industry.
-              </p>
-              <ul class="introduce__content--list">
-                <li class="introduce__content--item">
-                  <img
-                    src="./assets/images/Terrace.png"
-                    alt=""
-                    class="introduce__content--icon"
-                  />
-                  <h2 class="introduce__content--h2">
-                    Exclusive terrace areas on levels 3, 4 & 5
-                  </h2>
-                </li>
-                <li class="introduce__content--item">
-                  <img
-                    src="./assets/images/Luxurious.png"
-                    alt=""
-                    class="introduce__content--icon"
-                  />
-                  <h2 class="introduce__content--h2">Luxurious end of trip</h2>
-                </li>
-                <li class="introduce__content--item">
-                  <img
-                    src="./assets/images/Car.png"
-                    alt=""
-                    class="introduce__content--icon"
-                  />
-                  <h2 class="introduce__content--h2">22 Secure car space</h2>
-                </li>
-                <li class="introduce__content--item">
-                  <img
-                    src="./assets/images/Indivisual.png"
-                    alt=""
-                    class="introduce__content--icon"
-                  />
-                  <h2 class="introduce__content--h2">
-                    Individual climate control & double glazed windows
-                  </h2>
-                </li>
-              </ul>
+                </p>
+              </div>
+             
+              
+              <div class="introduce__content--uls">
+                <ul class="introduce__content--list">
+                  <li class="introduce__content--item">
+                    <img
+                      src="./assets/images/Roof.svg"
+                      alt=""
+                      class="introduce__content--icon"
+                      loading="lazy"
+                    />
+                    <h2 class="introduce__content--h2">
+                      Rooftop with uninterrupted views to CBD
+                    </h2>
+                  </li>
+                  <li class="introduce__content--item">
+                    <img
+                      src="./assets/images/Flexible.svg"
+                      alt=""
+                      class="introduce__content--icon"
+                      loading="lazy"
+                    />
+                    <h2 class="introduce__content--h2">
+                      Flexible floorplates, allowing for subdivision
+                    </h2>
+                  </li>
+                  <li class="introduce__content--item">
+                    <img
+                      src="./assets/images/Complimentry.svg"
+                      alt=""
+                      class="introduce__content--icon"
+                      loading="lazy"
+                    />
+                    <h2 class="introduce__content--h2">
+                      Complimentry ground floor boardroom
+                    </h2>
+                  </li>
+                  <li class="introduce__content--item">
+                    <img
+                      src="./assets/images/Cafe.svg"
+                      alt=""
+                      class="introduce__content--icon"
+                      loading="lazy"
+                    />
+                    <h2 class="introduce__content--h2">Ground floor café</h2>
+                  </li>
+                </ul>
+                <ul class="introduce__content--list ">
+                  <li class="introduce__content--item">
+                    <img
+                      src="./assets/images/Terrace.svg"
+                      alt=""
+                      class="introduce__content--icon"
+                      loading="lazy"
+                    />
+                    <h2 class="introduce__content--h2">
+                      Exclusive terrace areas on levels 3, 4 & 5
+                    </h2>
+                  </li>
+                  <li class="introduce__content--item">
+                    <img
+                      src="./assets/images/Luxurious.svg"
+                      alt=""
+                      class="introduce__content--icon"
+                      loading="lazy"
+                    />
+                    <h2 class="introduce__content--h2">Luxurious end of trip</h2>
+                  </li>
+                  <li class="introduce__content--item">
+                    <img
+                      src="./assets/images/Car.svg"
+                      alt=""
+                      class="introduce__content--icon"
+                      loading="lazy"
+                    />
+                    <h2 class="introduce__content--h2">22 Secure car space</h2>
+                  </li>
+                  <li class="introduce__content--item">
+                    <img
+                      src="./assets/images/Individual.svg"
+                      alt=""
+                      class="introduce__content--icon"
+                      loading="lazy"
+                    />
+                    <h2 class="introduce__content--h2">
+                      Individual climate control & double glazed windows
+                    </h2>
+                  </li>
+                </ul>
+              </div>
+            
             </div>
+       
+             
+              
+         
           </div>
         </div>
+        
       </div>
       <!-- Lesommet -->
-      <div class="lesommet">
+      <div class="lesommet" id="lesommet">
         <img
           src="./assets/images/Lesommet.png"
           alt="le sommet"
           class="lesommet__image"
+          loading="lazy"
+          data-aos="fade-right"
         />
-        <div class="lesommet__content">
+        <div class="lesommet__content" data-aos="fade-left" data-aos-duration="2000">
           <h1 class="lesommet__content--title">The Crowning Glory</h1>
-          <p>
+          <p class="lesommet__content--p">
             Le Sommet has taken the game to a new level. With panoramic views of
             the CBD this is the perfect place to entertain your clients.
             Complete with a full bar adorned with marble finishes this will be
@@ -184,8 +238,8 @@
         </div>
       </div>
       <!-- Workspace -->
-      <div class="workspace">
-        <div class="workspace__content">
+      <div class="workspace" id="workspace">
+        <div class="workspace__content " data-aos="fade-up" data-aos-duration="1500">
           <h1 class="workspace__content--title">
             Workspaces crafted to your needs
           </h1>
@@ -198,54 +252,67 @@
             light to each level.
           </p>
         </div>
-        <img
+        <div class="workspace__img1block">
+          <img
           src="./assets/images/Workspace.png"
           class="workspace__image1"
           alt="workspace"
+          loading="lazy"
+          
         />
+        
+        </div>
+     
         <div class="workspace__imgblock">
           <img
             src="./assets/images/Workspace2.png"
             alt="workspace2"
             class="workspace__imgblock--image2"
+            loading="lazy"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            
           />
           <img
             src="./assets/images/Workspace3.png"
             alt="workspace3"
             class="workspace__imgblock--image3"
+            loading="lazy"
+            data-aos="fade-left"
+            data-aos-duration="2000"
           />
         </div>
       </div>
       <!-- End of Trip Facilities -->
       <div class="facilities">
-        <div class="facilities__content">
+        <div class="facilities__content" data-aos="fade-right" data-aos-duration="2000">
           <h1 class="facilities__content--title">
-            Premium End of Trip Facilities
+            Premium End <br/> of Trip Facilities
           </h1>
           <p class="facilities__content--p">
             The End of Trip facilities helps employees to maintain a balance
-            between work, lifestyle, well-being and convenience. 
-          <br><br>
-            Reine is a premium office building that features state of-the-art facilities
-            with 8 showers in both the male and female changerooms, including
-            secure double lockers along with 22 bike racks.
+            between work, lifestyle, well-being and convenience.
+            <br /><br />
+            Reine is a premium office building that features state of-the-art
+            facilities with 8 showers in both the male and female changerooms,
+            including secure double lockers along with 22 bike racks.
           </p>
-          <ul class="introduce__content--list">
-            <li class="introduce__content--item">
+          <ul class="facilities__content--list">
+            <li class="facilities__content--item">
               <img
-                src="./assets/images/Roof.png"
+                src="./assets/images/Shower.svg"
                 alt=""
-                class="introduce__content--icon"
+                class="facilities__content--icon"
               />
-              <h2 class="introduce__content--h2">4 Showers</h2>
+              <h2 class="facilities__content--h2">4 Showers</h2>
             </li>
-            <li class="introduce__content--item">
+            <li class="facilities__content--item">
               <img
-                src="./assets/images/Flexible.png"
+                src="./assets/images/Bike.svg"
                 alt=""
-                class="introduce__content--icon"
+                class="facilities__content--icon"
               />
-              <h2 class="introduce__content--h2">8 Bike Racks</h2>
+              <h2 class="facilities__content--h2">8 Bike Racks</h2>
             </li>
           </ul>
         </div>
@@ -253,18 +320,328 @@
           src="./assets/images/Facility.png"
           alt="End of trip facilities"
           class="facilities__img"
+          loading="lazy"
         />
       </div>
       <!-- Floor plans -->
       <div class="floorplan">
-        <div class="floorplan__content">
-        <div class="floorplan__level">
-            <h2 class="floorplan__level--name">Rooftop </h2>- 106sqm
-            <p class="floorplan__level--p">TERRACE BAR</p>
+        <div class="floorplan__header">
+          <div class="floorplan__content">
+            <div class="floorplan__level">
+              <p class="floorplan__level--p">
+                <strong>ROOFTOP</strong> -106sqm
+              </p>
+              <p class="floorplan__level--p">TERRACE BAR</p>
+            </div>
+            <div class="floorplan__level">
+              <p class="floorplan__level--p">
+                <strong> LEVEL 06</strong> — 300sqm
+              </p>
+              <p class="floorplan__level--p">
+                COMMERCIAL OFFICE + 36.1sqm BALCONIES
+              </p>
+            </div>
+            <div class="floorplan__level">
+              <p class="floorplan__level--p">
+                <strong>LEVEL 05</strong> — 300sqm
+              </p>
+              <p class="floorplan__level--p">
+                COMMERCIAL OFFICE + 68.5sqm BALCONIES
+              </p>
+            </div>
+            <div class="floorplan__level">
+              <p class="floorplan__level--p">
+                <strong>LEVEL 04</strong> — 356sqm
+              </p>
+              <p class="floorplan__level--p">
+                COMMERCIAL OFFICE + 32.5sqm BALCONY
+              </p>
+            </div>
+            <div class="floorplan__level">
+              <p class="floorplan__level--p">
+                <strong>LEVEL 03</strong> — 356sqm
+              </p>
+              <p class="floorplan__level--p">
+                COMMERCIAL OFFICE + + 28sqm BALCONY
+              </p>
+            </div>
+            <div class="floorplan__level">
+              <p class="floorplan__level--p">
+                <strong>LEVEL 02</strong> — 356sqm
+              </p>
+              <p class="floorplan__level--p">COMMERCIAL OFFICE</p>
+            </div>
+            <div class="floorplan__level">
+              <p class="floorplan__level--p">
+                <strong>LEVEL 01</strong> —49sqm& 209sqm
+              </p>
+              <p class="floorplan__level--p">COMMERCIAL OFFICE</p>
+            </div>
+            <div class="floorplan__ground first">
+              <p class="floorplan__level--p">
+                <strong>GROUND FLOOR</strong>
+              </p>
+              <p class="floorplan__level--p">
+                CAFE / RETAIL 57sqm, COMMUNAL BOARDROOM + END OF TRIP FACILITIES
+              </p>
+            </div>
+            <div class="floorplan__ground">
+              <p class="floorplan__level--p">
+                <strong>BASEMENT</strong>
+              </p>
+              <p class="floorplan__level--p">22 SECURE CAR SPACES</p>
+            </div>
+          </div>
+          <div class="floorplan__content--mobile"></div>
+     
+          <img
+            src="./assets/images/Floorplan.png"
+            alt="floorplan"
+            class="floorplan__img"
+            loading="lazy"
+          />
         </div>
+        <br /><br />
+        <div class="floorplan__footer" data-aos="fade-up" data-aos-duration="2000">
+          <a
+            href="./assets/images/Floorplan.png"
+            download="Floorplan.png"
+            class="floorplan__download"
+            ><i class="ti-arrow-down"> </i> Download Floorplans</a
+          >
         </div>
-        <img src="./assets/images/Floorplan.png" alt="floorplan" class="floorplan__img">
+      </div>
+      <!-- Map -->
+      <div class="map">
+        <div class="map__text--mobile">
+          <h1 class="map__content--title">The Kingship of Cremorne</h1>
+          <p class="map__content--p">
+            Located in the heart of Cremorne, ROIS is central to numerous
+            amenity. An abundance of Melbourne’s best cafes, restaurants, and
+            bars are all within a short stroll.
+          </p>
+        </div>
+        <div class="map__text " data-aos="fade-right" data-aos-duration="2000">
+           <div class="map__text--desktop">
+            <h1 class="map__content--title">The Kingship of Cremorne</h1>
+          <p class="map__content--p">
+            Located in the heart of Cremorne, ROIS is central to numerous
+            amenity. An abundance of Melbourne’s best cafes, restaurants, and
+            bars are all within a short stroll.
+          </p>
+           </div>
+          <div class="map__tab">
+            <button
+              class="map__tablinks FoodBeverage active"
+              onclick="openMap(event, 'FoodBeverage')"
+            >
+              <p class="map__tablinks--p">Food & Beverage</p>
+            </button>
+            <button
+              class="map__tablinks Wellness"
+              onclick="openMap(event, 'Wellness')"
+            >
+            <p class="map__tablinks--p"> Wellness</p>
+             
+            </button>
+            <button
+              class="map__tablinks Cafés"
+              onclick="openMap(event, 'Cafés')"
+            >
+            <p class="map__tablinks--p">  Cafés</p>
+             
+            </button>
+            <button
+              class="map__tablinks Amenity"
+              onclick="openMap(event, 'Amenity')"
+            >
+            <p class="map__tablinks--p">    Amenity</p>
+           
+            </button>
+          </div>
+          <div id="FoodBeverage" class="map__tabcontent" style="display: block;"></div>
+          <div id="Wellness" class="map__tabcontent"></div>
+          <div id="Cafés" class="map__tabcontent"></div>
+          <div id="Amenity" class="map__tabcontent"></div>
+        </div>
+        <div class="map__content" data-aos="fade-left" data-aos-duration="2000">
+          <div class="zoom_outer">
+            <div id="zoom">
+              <div class="map__container">
+                <img
+                src="./assets/images/Map/Base.svg"
+                alt="Map1"
+                class="map__image map__b"
+                loading="lazy"
+              />
+             
+                <img src="./assets/images/Map/Food.svg" alt="Food place" class="map__image map__layer active FoodBeverage-map" id="FoodBeverage-map" loading="lazy">
+                <img src="./assets/images/Map/Wellness.svg" alt="Wellness place" class="map__image map__layer Wellness-map" loading="lazy">
+                <img src="./assets/images/Map/Cafes.svg" alt="Cafés place" class="map__image map__layer Cafés-map" loading="lazy">
+                <img src="./assets/images/Map/Amenity.svg" alt="Amenity place" class="map__image map__layer Amenity-map" loading="lazy">
+          
+          
+              
+              </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Slider -->
+      <div class="slider">
+        <div>
+          <img
+            src="./assets/images/Slider/Slide1.png"
+            alt="Slider1"
+            class="slider__image"
+            loading="lazy"
+          />
+          <p class="slider__describ">An abundance of wellness facilities including Volt Fitness</p>
+        </div>
+        <div>
+          <img
+            src="./assets/images/Slider/Slide2.png"
+            alt="Slider2"
+            class="slider__image"
+            loading="lazy"
+          />
+          <p class="slider__describ"> Step off the train platform and walk directly into your new office</p>
+        </div>
+        <div>
+          <img
+            src="./assets/images/Slider/Slide3.png"
+            alt="Slider3"
+            class="slider__image"
+            loading="lazy"
+          />
+          <p class="slider__describ">Close proximity to the Main Yarra Trail</p>
+        </div>
+        <div>
+          <img
+            src="./assets/images/Slider/Slide4.png"
+            alt="Slider4"
+            class="slider__image"
+            loading="lazy"
+          />
+          <p class="slider__describ">Surrounded by renowned restaurants like New Quarter</p>
+        </div>
+        <div>
+          <img
+            src="./assets/images/Slider/Slide5.png"
+            alt="Slider5"
+            class="slider__image"
+            loading="lazy"
+          />
+          <p class="slider__describ">Home to Melbourne's best lifestyle precinct</p>
+        </div>
+        <div>
+          <img
+            src="./assets/images/Slider/Slide6.png"
+            alt="Slider6"
+            class="slider__image"
+            loading="lazy"
+          />
+          <p class="slider__describ">A long list of new locals</p>
+        </div>
+        <div>
+          <img
+            src="./assets/images/Slider/Slide7.png"
+            alt="Slider7"
+            class="slider__image"
+            loading="lazy"
+          />
+          <p class="slider__describ">Le Sommet is the perfect escape from your working day to refresh and inspire</p>
+        </div>
+      </div>
+      <!-- Partnership  -->
+      <div class="partnership" id="partnership">
+        <h1 class="partnership__title">MANOR x VUJIC</h1>
+        <p class="partnership__description">
+          The Manor × Vujic partnership specialises in creating beautiful spaces
+          that exude luxury, while inspiring connection, creativity and
+          community. With a background in high-end residential developments, we
+          understand what it takes to create beautiful spaces where people want
+          to live, connect and come back to.<br /><br/>
+          For every project we go the extra mile to deliver exceptional
+          developments that raise the bar for the industry.
+        </p>
+
+        <div class="partnership__groups">
+          <div class="partnership__group" data-aos="flip-up" data-aos-duration="2000">
+            <p class="partnership__group--role">DEVELOPMENT COLLABORATOR</p>
+            <h2 class="partnership__group--name">Manor Property Group</h2>
+            <p class="partnership__group--description">
+              With extensive experience in providing capital structures and
+              solutions, Manor Property Group facilitate exceptional property
+              developments through collaboration with industry leaders.
+            </p>
+            <a href="manorpg.com" class="partnership__group--site"
+              >manorpg.com</a
+            >
+          </div>
+          <div class="partnership__group" data-aos="flip-up" data-aos-duration="2000">
+            <p class="partnership__group--role">Developer & BUILDER</p>
+            <h2 class="partnership__group--name">Vujic Property Group</h2>
+            <p class="partnership__group--description">
+              Vujic Property Group is an award-winning construction company that
+              specialises in creating luxury homes, apartments and commercial
+              buildings.
+            </p>
+            <a href="manorpg.com" class="partnership__group--site"
+              >vujicproperty.com.au
+            </a>
+          </div>
+          <div class="partnership__group" data-aos="flip-up" data-aos-duration="2000">
+            <p class="partnership__group--role">FUNDING PARTNER</p>
+            <h2 class="partnership__group--name">DIGCAP</h2>
+            <p class="partnership__group--description">
+              DIGCAP originated in Melbourne, Australia and has extensive
+              experience in providing capital structures and solutions through
+              methods of access to equity, debt or hybrid capital.
+            </p>
+            <a href="manorpg.com" class="partnership__group--site"
+              >digcap.capital
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Contact -->
+      <div class="contact" id="contact">
+        <h1 class="contact__title">Enquire Now</h1>
+        <div class="contact__profiles">
+          <div class="contact__profile" data-aos="fade-right"  data-aos-duration="2000">
+            <h2 class="contact__profile--name">ASH DEAN</h2>
+            <p class="contact__profile--number">0417 654 212</p>
+            <a href="mailto:ash.dean@colliers.com" class="contact__profile--email">ash.dean@colliers.com</a>
+          </div>
+          <div class="contact__profile" data-aos="fade-left"  data-aos-duration="2000">
+            <h2 class="contact__profile--name">JAMES MCMAHON</h2>
+            <p class="contact__profile--number">0421 547 184</p>
+            <a href="mailto:james.mcmahon@colliers.com" class="contact__profile--email">james.mcmahon@colliers.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer__p">All architectural images are artist impressions</div>
+        <div class="footer__p"><a href="https://superherocheesecake.com/" class="footer__p--link">Website by WOO Agency</a> </div>
       </div>
     </div>
   </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script
+    type="text/javascript"
+    src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="./assets/js/index.js"></script>
 </html>
