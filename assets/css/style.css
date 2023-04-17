@@ -281,3 +281,6 @@ body {
     /* or 107% */
     color: #1F2940;
 }
+.content{
+overflow:hidden;
+}
